@@ -21,6 +21,7 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark);
+  overflow: hidden;
 }
 
 h1,
@@ -48,6 +49,7 @@ h3 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 html {
@@ -55,8 +57,71 @@ html {
   overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
+/* --- Отступы --- */
+
+/* Марджины */
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* --- Текст --- */
+
+/* Заголовки */
+
+.heading {
+  font-weight: 400;
+}
+
+/* Цвет */
+
+.text-primary {
+  color: var(--primary);
+}
+
+/* --- Колонки --- */
+
+/* Две колонки */
+
+.text-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- Адаптив --- */
+
+/* 1920+ */
+
+/* 1440 */
+
+/* 1024 */
+
+/* 768 */
+
+/* 425 */
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+/* 375 */
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .text-cols {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+  }
 }
