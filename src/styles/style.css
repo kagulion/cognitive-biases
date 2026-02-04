@@ -12,6 +12,8 @@
   --dark-50: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+  --first-family: "Open Sans", sans-serif;
+  --second-family: "Neucha", cursive;
 }
 
 /* ------ Шрифты ------ */
@@ -66,6 +68,10 @@ html {
 
 /* Марджины */
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -86,6 +92,14 @@ html {
   color: var(--primary);
 }
 
+.text-white {
+  color: var(--white);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
 /* Выравнивание */
 
 .text-center {
@@ -98,9 +112,11 @@ html {
   font-weight: 400;
 }
 
-/* ------ Колонки ------ */
+.heading-big {
+  font-size: 52px;
+}
 
-/* Две колонки */
+/* ------ Колонки ------ */
 
 .text-cols {
   display: grid;
@@ -114,6 +130,17 @@ html {
   gap: 20px;
 }
 
+/* ------ Гриды ------ */
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* ------ Адаптив ------ */
 
 /* 1920+ */
@@ -122,7 +149,27 @@ html {
 
 /* 1024 */
 
+@media (max-width: 1024px) {
+  .heading-big {
+    font-size: 40px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* 768 */
+
+@media (max-width: 768px) {
+  .heading-big {
+    font-size: 32px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 /* 425 */
 

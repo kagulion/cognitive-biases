@@ -37,7 +37,8 @@
 }
 
 .section-dark {
-  background-color: var(--dark);
+  padding-top: 200px;
+  background-color: var(--primary-dark);
 }
 
 .section-pattern::before {
@@ -102,6 +103,34 @@
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+/* Навигация */
+
+.navigation-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: var(--light);
+}
+
+.navigation-card span {
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  font-family: var(--second-family);
+  color: var(--primary-dark);
+}
+
+.navigation-card:hover {
+  background-color: var(--primary);
+}
+
+.navigation-card:hover span,
+.navigation-card:hover h3,
+.navigation-card:hover p {
+  color: var(--white);
+}
+
 /* ------ Адаптив ------ */
 
 /* 1920+ */
@@ -163,5 +192,14 @@
 
   .hero-image {
     visibility: hidden;
+  }
+
+  .navigation-card {
+    padding: 20px;
+  }
+
+  .navigation-card span {
+    padding-bottom: 20px;
+    font-size: 40px;
   }
 }
