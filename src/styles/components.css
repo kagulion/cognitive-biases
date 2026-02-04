@@ -19,6 +19,10 @@
   background-color: var(--primary);
 }
 
+.button-primary:hover {
+  background-color: #ea7600;
+}
+
 /* ------ Секции ------ */
 
 .section {
