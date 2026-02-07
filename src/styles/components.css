@@ -40,12 +40,18 @@
   background-color: var(--light);
 }
 
+.section-brown-pattern {
+  position: relative;
+  background-color: var(--brown);
+}
+
 .section-dark {
   padding-top: 200px;
   background-color: var(--primary-dark);
 }
 
-.section-pattern::before {
+.section-pattern::before,
+.section-brown-pattern::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -169,6 +175,19 @@
   line-height: 120%;
   color: var(--white);
   background: var(--brown);
+}
+
+.section-brown-pattern * {
+  color: var(--white);
+}
+
+.section-brown-pattern .effect-subtitle {
+  color: var(--white-50);
+}
+
+.section-brown-pattern .effect-about {
+  color: var(--brown);
+  background: var(--white);
 }
 
 /* ------ Адаптив ------ */
