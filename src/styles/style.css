@@ -118,13 +118,13 @@ html {
 
 /* ------ Колонки ------ */
 
-.text-cols {
+.cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-.text-col {
+.col {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -184,6 +184,15 @@ html {
 
   .mb-28 {
     margin-bottom: 20px;
+  }
+
+  .cols {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .col {
+    gap: 12px;
   }
 }
 
