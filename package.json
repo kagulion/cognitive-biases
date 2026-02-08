@@ -1,10 +1,10 @@
 {
-  "name": "html5-css-boilerplate",
-  "version": "0.1.0",
-  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "name": "cognitive-biases",
+  "version": "1.0.0",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
+    "url": "https://github.com/kagulion/cognitive-biases.git"
   },
   "main": "",
   "devDependencies": {
@@ -15,6 +15,6 @@
     "stylelint-scss": "^4.4.0",
     "surge": "^0.0.0"
   },
-  "author": "Nikita Mikhaylov",
+  "author": "KAGU",
   "license": "ISC"
 }
