@@ -13,3 +13,8 @@ https://cog-dist.surge.sh/
 ### Компоновка CSS
 
 **Лайтовый OOCSS** — используется kebab-case, адаптив пишется в компонентах
+
+### Линтинг
+
+- stylelint
+- htmlhint
