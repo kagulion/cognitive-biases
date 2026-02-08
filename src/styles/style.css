@@ -68,6 +68,14 @@ html {
 
 /* Марджины */
 
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
@@ -86,7 +94,7 @@ html {
 
 /* ------ Текст ------ */
 
-/* Цвет */
+/* Цвет текста */
 
 .text-primary {
   color: var(--primary);
@@ -100,7 +108,22 @@ html {
   color: var(--dark);
 }
 
-/* Выравнивание */
+/* Размер текста */
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-xs {
+  font-size: 12px;
+  line-height: 120%;
+}
+
+/* Выравнивание текста */
 
 .text-center {
   text-align: center;
@@ -162,6 +185,10 @@ html {
 /* 768 */
 
 @media (max-width: 768px) {
+  h3 {
+    font-size: 28px;
+  }
+
   .heading-big {
     font-size: 32px;
   }
